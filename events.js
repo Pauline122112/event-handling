@@ -8,6 +8,7 @@ function start () {
   // when you mouse over it.
   one()
   two()
+  three()
 
   // Your turn! Create a new function called `two`, then call it from here.
 }
@@ -25,11 +26,15 @@ function one () {
 // CREATE FUNCTION two HERE
 function two () {
   var two = document.getElementById('two')
-  one.addEventListener('mouseenter', makeGreen)
-  one.addEventListener('mouseleave', makeWhite)
+  two.addEventListener('mouseenter', makeGreen)
+  two.addEventListener('mouseleave', makeWhite)
 }
 // CREATE FUNCTION three HERE
-
+function three () {
+  var three = document.getElementById('three')
+  three.addEventListener('mouseenter', makeOrange)
+  three.addEventListener('mouseleave', makeWhite)
+}
 // CREATE FUNCTION four HERE
 
 // Changes the background color of event's target
